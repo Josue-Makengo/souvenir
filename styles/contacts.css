@@ -1,0 +1,49 @@
+@import 'module/navbar.css';
+@import 'module/contacts.css';
+
+:root{
+    --white:#fff;
+    --bleu: rgb(0,0,255);
+    --rose:#ab088b;
+    --bleu-foncé:#11001c;
+    --skybleu:rgba(0,136,169,1);
+
+    
+    /* text */
+    --body-font: 'Montserrat';
+    --header-title: Arial, Helvetica, sans-serif;
+    --title-font: Arial ;
+}
+
+body{
+    background:var(--bleu-foncé);
+}
+.nav__link--active{
+    color:var(--skybleu);
+}
+h2{
+    color:var(--skybleu);
+}
+
+.footer {
+    text-align: center;
+    color:var(--white);
+    margin-top: 100px;
+    font-family:var(--title-font);
+}
+
+.footer__adresse-email {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.footer__touts-droits-reservés{
+    margin-bottom: 20px;
+}
+
+@media (max-width:768px){
+    .footer__adresse-email {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+}
+

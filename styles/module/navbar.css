@@ -1,0 +1,214 @@
+:root{
+    --white:#fff;
+    --bleu: rgb(0,0,255);
+    --rose:#ab088b;
+    --bleu-foncé:#11001c;
+    --skybleu:rgba(0,136,169,1);
+}
+
+.nav__item, .nav__link, button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--white);
+    text-decoration: none;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background: linear-gradient(120deg, #0b010d,#270022,#0a0101); 
+    z-index: 2;
+}
+.navbar__logo{
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+}
+span{
+    color: var(--rose);
+}
+.nav__links{
+    list-style: none;
+}
+.nav__links .nav__item{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+.nav__links .nav__item .nav__link {
+    transition: all 0.3s ease 0s;
+}
+.nav__links .nav__item .nav__link:hover{
+    color: var(--skybleu);
+}
+
+.nav__btn{
+    padding: 9px 25px;
+    background-color: var(--skybleu);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.navbar__btn:hover{
+    background-color: rgb(85, 139, 155);
+    color: var(--white);
+}
+nav .menubar i{
+    font-size: 30px;
+    color:var(--white);
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    .nav__btn{
+        display: none;
+    }
+
+    nav{
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(120deg, #1a001e,#2a0022,#160101); 
+        z-index: 3;
+    }
+    nav #click{
+        display: none;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 78px;
+        left: -150%;
+        background: linear-gradient(90deg, #1a001e, #2a0022,#160101); 
+        height: 100vh;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: all .3s ease;   
+    }
+
+    #click:checked ~ ul{
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav .menubar i{
+        display: block;
+    }
+
+    #click, .menubar{
+        display: block;
+    }
+   
+    #click:checked ~ .menubar #menu{
+        display: none;
+    }
+    .menubar #close{
+        display: none;
+    }
+    #click:checked ~ .menubar #close{
+        display: block;
+    }  
+
+    nav .menubar{
+        margin-right: -55%;
+    }
+
+    .navbar__logo{
+        margin-left: -3%;
+    }
+
+   
+}
+
+
+ @media (max-width: 768px) {
+    .nav__btn{
+        display: none;
+    }
+
+    nav{
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(120deg, #1a001e,#2a0022,#160101); 
+        z-index: 3;
+
+    }
+
+    nav #click{
+        display: none;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 78px;
+        left: -150%;
+        background: linear-gradient(90deg, #1a001e, #2a0022,#160101); 
+        height: 100vh;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: all .3s ease;
+       
+    }
+
+    #click:checked ~ ul{
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+    nav .menubar i{
+        display: block;
+    }
+
+    #click, .menubar{
+        display: block;
+    }
+   
+    #click:checked ~ .menubar #menu{
+        display: none;
+    }
+    .menubar #close{
+        display: none;
+    }
+    #click:checked ~ .menubar #close{
+        display: block;
+    }  
+    
+    nav .menubar{
+        margin-right: -45%;
+    }
+
+    .navbar__logo{
+        margin-left: -3%;
+    }
+
+
+    
+} 

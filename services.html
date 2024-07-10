@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles/services.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav role="navigation" aria-label="navigation principale">
+            <a href="#" class="navbar__logo">L<span>O</span>GO</a>
+            
+            <input type="checkbox" id="click">
+            <label for="click" class="menubar">
+                <i class="fa-solid fa-bars" id="menu"></i>
+                <i class="fa-solid fa-xmark" id="close"></i>
+             </label> 
+
+            <ul class="nav__links">
+                <li class="nav__item"><a class="nav__link"  href="index.html">Acceuil</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--active" href="#">Services</a></li>
+                <li class="nav__item"><a class="nav__link" href="carrières.html">Carrières</a></li>
+                <li class="nav__item"><a class="nav__link" href="contacts.html">Contacts</a></li>
+            </ul>
+            <a href="#" class="cta"><button class="nav__btn" aria-label="contacts">Contacts</button></a>
+        </nav>
+        <h1 class="header__title"><span>P</span>restation <span>d</span>e nos <span>S</span>ervices</h1>
+        <p class="header__content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit natus temporibus nostrum saepe ea pariatur
+            molestias non omnis! Nesciunt dolor, <br> porro veritatis distinctio adipisci aliquam  animi amet repudiandae nemo sint
+            Lorem ipsum, dolor sit 
+        </p>
+    </header>
+    <main>
+        <section class="services" aria-label="prestation-services">
+            <div class="services__dev-web">
+                <h2 class="services__title" id="developpeur-web">Developpement Web</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit natus temporibus nostrum saepe ea pariatur</p>
+            <div class="container">
+                <div class="slider-wrapper" aria-labelledby="developpeur-web">
+                    <div class="slider">
+                        <img id="slide-1" src="Photos/developpement-web-1.jpg" alt="developpement-web">
+                        <img id="slide-2" src="Photos/developpement-web-2.jpg" alt="developpement-web">
+                        <img id="slide-3" src="Photos/developpement-web-3.jpeg" alt="developpement-web">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="services__dev-mobile">
+                <h2 class="services__title" id="developpeur-mobile">Developpement Mobile</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit natus temporibus nostrum saepe ea pariatur</p>
+            <div class="container">
+                <div class="slider-wrapper" aria-labelledby="developpeur-mobile">
+                    <div class="slider">
+                        <img id="slide-4" src="Photos/developpement-mobile-1.jpeg" alt="developpement-mobile">
+                        <img id="slide-5" src="Photos/developpement-mobile-2.jpeg" alt="developpement-mobile">
+                        <img id="slide-6" src="Photos/developpement-monile-3.jpeg" alt="developpement-mobile">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+                        <a href="#slide-6"></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="services__ux">
+                <h2 class="services__title" id="design">Conception UX/UI</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit natus temporibus nostrum saepe ea pariatur</p>
+            <div class="container">
+                <div class="slider-wrapper" aria-labelledby="design">
+                    <div class="slider">
+                        <img id="slide-7" src="Photos/UX-1.jpg" alt="ux/ui">
+                        <img id="slide-8" src="Photos/UX-2.jpg" alt="ux/ui">
+                        <img id="slide-9" src="Photos/UX-3.jpeg" alt="ux/ui">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-7"></a>
+                        <a href="#slide-8"></a>
+                        <a href="#slide-9"></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- formulaire de contacts -->
+
+
+        <section class="contacts">
+            <h2 class="contacts__title" id="form-tittle">Contactez-nous</h2>
+            <form class="contacts__form" aria-label="contact-form" aria-labelledby="form-tittle" method="get" action="">
+                <div class="contacts__group">
+                    <div class="contacts__fieldset">
+                     <label class="contacts__label" for="nom"></label>
+                     <input class="contacts__input contacts__input--un" type="text" id="nom" name="nom" placeholder="nom complet" required>
+                   </div>
+                <div class="contacts__fieldset">
+                <label class="contacts__label" for="téléphone"></label>
+                <input  class="contacts__input" type="tel" id="téléphone" name="téléphone" placeholder="Téléphone" required>
+                </div>
+            </div>
+            <div class="contacts__group">
+                <div class="contacts__fieldset">
+                <label class="contacts__label" for="email"></label>
+                <input  class="contacts__input" type="email" id="email" name="email" placeholder="Adresse email" required>
+                </div>
+                <div class="contacts__fieldset">
+                <label class="contacts__label" for="aide"></label> <br>
+                <select class="contacts__select" name="aide" id="aide" required>
+                    <option value="Comment pouvez-nous vous aider ?" selected>Comment pouvez-nous vous aider ?</option>
+                    <option value="Développement web"> Développement web</option>
+                    <option value="Développement mobile"> Développement mobile</option>
+                    <option value="conception ux/ui"> Conception UX/UI</option>
+                    <option value="formation et coaching" >Formation et coaching </option>
+                </select>
+                </div>
+                </div>
+                <div class="contacts__fieldset full-width">
+                    <label class="contacts__label" for="message"></label>
+                    <textarea class="contacts__textarea" name="message" id="message" placeholder="Votre message" required></textarea>
+                </div>
+                    <button class="contacts__btn" type="submit">Envoyer</button>
+                    
+            </form>
+        </section>
+    </main>
+    <footer class="footer" role="footer">
+        <p class="footer__adresse-email">Préférez nous envoyez un e-mail ? Envoyez votre demande à: <span> josmakengim@gmail.com </span></p>
+        <p class="footer__tout-droits-reservés">&copy;créé avec amour par lorem.co &copy;2024 Lorem. Tout droits reservés</p>
+    </footer>
+</body>
+</html>

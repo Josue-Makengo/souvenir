@@ -1,0 +1,112 @@
+:root{
+    --white:#fff;
+    --bleu: rgb(0,0,255);
+    --rose:#ab088b;
+    --bleu-foncé:#11001c;
+    --skybleu:rgba(0,136,169,1);
+
+    
+    /* text */
+    --title-font: Arial ;
+
+    --title-font-size: 1.5rem;
+}
+
+
+.contacts{
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contacts__title{
+    font-family: var( --title-font) ;
+    font-size: var(--title-font-size);
+    margin-bottom: 35px;
+}
+
+.contacts__form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.contacts__group{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.contacts__fieldset{
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+}
+.full-width{
+    width: 100%;
+}
+.contacts__input,
+.contacts__select,
+.contacts__textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contacts__textarea{
+    height: 100px;
+}
+.contacts__btn{
+    display: block;
+    width: 200px;
+    margin: 0 76% ;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid var(--skybleu) ;
+    border-radius: 15px;
+    text-transform: uppercase;
+    background-color: var(--skybleu);
+    color:var(--white);
+    transition: .3s;
+}
+.contacts__btn:hover{
+    background: transparent;
+}
+
+@media (min-width:767px) and (max-width:1023px){
+    .contacts__form{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    .contacts__btn{
+        margin: 0 70%;
+    }
+
+}
+
+@media (max-width:768px){
+   
+    
+
+
+    .contacts__form, .contacts__group{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts__fieldset{
+        width: 100%;
+        flex: 1;
+        margin-bottom: 20px;
+    }
+    .contacts__fieldset label {
+        width: 100%;
+    }
+    .contacts__fieldset input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .contacts__btn{
+        width: 100%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,139 @@
+@import 'module/navbar.css';
+@import 'module/contacts.css';
+
+:root{
+    --white:#fff;
+    --bleu: rgb(0,0,255);
+    --rose:#ab088b;
+    --bleu-foncé:#11001c;
+    --skybleu:rgba(0,136,169,1);
+
+    
+    /* text */
+    --body-font: 'Montserrat';
+    --header-title: Arial, Helvetica, sans-serif;
+    --title-font: Arial ;
+
+    --header-font-weight: 600;
+    --title-font-weight: 600;
+
+    --body-font-size: 1rem ;
+    --header-font-size: 4.5rem;
+    --title-font-size: 1.5rem;
+}
+
+
+body{
+    background:var(--bleu-foncé);
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    color: var(--white);
+}
+.nav__link--active{
+    color:var(--skybleu);
+}
+
+header{
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+}
+.header__title {
+    font-size:var(--header-font-size);
+    font-weight:var(--header-font-weight);
+    font-family:var(--header-title);
+    color: var(--white);
+    padding-top: 15%;
+}
+
+h2{
+    color:var(--skybleu);
+}
+h3{
+    color:var(--white);
+    font-weight: 800;
+}
+span{
+    color:var(--rose);
+}
+
+.recrutement{
+    text-align: center;
+    color:var(--white);
+    border: 3px solid var(--bleu-foncé);
+    border-radius: 10px;
+    height: 400px;
+    width: 800px;
+    margin: auto;
+    background: linear-gradient(120deg,#11011b,#1b1b1b);
+}
+.competances{
+    color: var(--rose);
+}
+.competances__title{
+    text-decoration: underline;
+}
+.competances__btn{
+    height: 60px;
+    width: 200px;
+    margin-top: 15px;
+    padding: 9px 25px;
+    background-color:var(--skybleu);
+    border: 1px solid var(--skybleu);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.competances__btn:hover{
+    background: transparent;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+}
+
+.footer__adresse-email {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.footer__touts-droits-reservés{
+    margin-bottom: 20px;
+}
+
+@media (min-width:767px) and (max-width:1023px){
+    .header__title{
+        margin-top: 30%;
+    }
+    .recrutement{
+        height: 50%;
+        width: 100%;
+    }
+    .competances__btn{
+        margin-bottom: 1rem;
+    }
+
+
+}
+
+
+@media (max-width:767px){
+    .header__title{
+        margin-top: 30%;
+    }
+
+    .recrutement{
+        height: 50%;
+        width: 100%;
+    }
+    .competances__btn{
+        margin-bottom: 1rem;
+    }
+    .footer__adresse-email {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+
+}
