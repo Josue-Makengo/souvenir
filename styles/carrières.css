@@ -17,8 +17,8 @@
     --header-font-weight: 600;
     --title-font-weight: 600;
 
-    --body-font-size: 1rem ;
-    --header-font-size: 4.5rem;
+    --body-font-size: 1.1rem ;
+    --header-font-size: 5.5rem;
     --title-font-size: 1.5rem;
 }
 
@@ -121,6 +121,7 @@ span{
 @media (max-width:767px){
     .header__title{
         margin-top: 30%;
+        font-size: 3.5rem;
     }
 
     .recrutement{
